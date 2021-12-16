@@ -31,6 +31,3 @@ title: About
 3. `public`폴더에 파일 저장하고 `_includes/head.html`파일 수정
 
 [참고한 블로그 사이트](https://velog.io/@eona1301/Github-Blog-%ED%8C%8C%EB%B9%84%EC%BD%98Favicon-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0)
-
-### 커스텀 플러그인 적용하기
-[댓글기능 추가]
