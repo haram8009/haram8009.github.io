@@ -20,6 +20,7 @@ title: About
 * Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
 * Coded with [Atom](https://atom.io)
 
-<p>깃헙 링크: <a href="https://github.com/haram8009/haram8009.github.io">https://github.com/haram8009/haram8009.github.io</a>, 이메일: <a href="haram0809@kookmin.ac.kr">haram0809@kookmin.ac.kr</a></p>
+<p>깃헙 링크: <a href="https://github.com/haram8009/haram8009.github.io">https://github.com/haram8009/haram8009.github.io</a></p>
+<p>이메일: <a href="haram0809@kookmin.ac.kr">haram0809@kookmin.ac.kr</a></p>
 
 Thanks for reading!
