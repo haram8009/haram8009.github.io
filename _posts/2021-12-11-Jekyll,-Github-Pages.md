@@ -2,6 +2,7 @@
 layout: post
 title: Jekyll, Github Pages
 comments: true
+categories : [Blog]
 ---
 ## Jekyll
 Ruby 기반 정적 웹사이트 생성기
