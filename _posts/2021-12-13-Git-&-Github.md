@@ -2,7 +2,6 @@
 layout: post
 title: Git & Github
 comments: true
-categories : [Git&GitHub]
 ---
 ## Git
 분산 버전관리 시스템 (형상 관리 도구)
