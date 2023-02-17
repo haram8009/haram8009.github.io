@@ -39,7 +39,7 @@ body {
 }
 
 html {
-  font-family: "PT", Georgia, "Times New Roman";
+  font-family: "PT", Georgia, "Times New Roman", sans-serif;
 }
 
 h1,
