@@ -1,124 +1,143 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <title>Likelion Login</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lobster&family=Mukta&family=Sofia+Sans+Extra+Condensed:wght@200&display=swap");
+      body {
+        background-color: #5f5f5f;
+        /* #d7cacf; */
+        font-family: sans-serif;
+        color: #f9b8d2;
+      }
+      .big_container {
+        width: 30rem;
+        margin: auto;
+        text-align: center;
+      }
+      h1 {
+        font-family: "Black Han Sans", sans-serif;
+        margin-bottom: 0;
+      }
+      h3,
+      h2 {
+        font-family: "Lobster", cursive;
+        color: #86d8f7;
+      }
+      .profile-spans {
+        font-family: "Sofia Sans Extra Condensed", sans-serif;
+        width: 10rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        font-size: larger;
+        color: #fefbb1;
+      }
+      .quote {
+        font-size: larger;
+        font-family: "Sofia Sans Extra Condensed", sans-serif;
+        border-top: 0.1rem solid #fefbb1;
+        border-bottom: 0.1rem solid #fefbb1;
+        color: #fefbb1;
+      }
+      .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
-    <link rel="stylesheet" href="style.css" />
+        font-family: "Mukta", sans-serif;
+        width: 100%;
+        font-size: 1rem;
+      }
+      .item {
+        /* border: 1px solid black; */
+        padding: 0.2rem;
+        text-align: left;
+      }
+      .item:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/6;
+      }
+      .item:nth-child(7) {
+        grid-column: 1/3;
+      }
+      #profile-img {
+        width: 12rem;
+        height: 12rem;
+
+        border: 0.2rem solid #fefbb1;
+
+        background-color: transparent;
+        border-radius: 50%;
+      }
+      strong {
+        color: #f0438c;
+      }
+      b {
+        color: #fefbb1;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I'm HARAM.</title>
   </head>
   <body>
-    <div id="big-container">
-      <a href="http://www.codelion.net" target="_blank"
-        >멋쟁이사자처럼 바로가기</a
-      >
-      <img src="likelionuniv.png" />
-      <h1>회원가입</h1>
-      <form action="서버주소" method="POST">
-        <fieldset>
-          <legend>기본 정보</legend>
-          <ul>
-            <li>
-              <label for="userid">아이디 :</label>
-              <input
-                id="userid"
-                type="text"
-                placeholder="아이디는 8자 이상입니다. "
-              />
-            </li>
-            <li>
-              <label for="userpw"> 비밀번호 :</label>
-              <input
-                id="userpw"
-                type="text"
-                placeholder="비밀번호는 10자 이상입니다. "
-              />
-            </li>
-            <li>
-              성별 : <label for="gender_man">남자</label
-              ><input
-                name="gender"
-                id="gender_man"
-                type="radio"
-                value="man"
-                checked
-              />
-              <label for="gender_woman">여자</label
-              ><input
-                name="gender"
-                id="gender_woman"
-                type="radio"
-                value="woman"
-              />
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>부가 정보</legend>
-          <ul>
-            <li>
-              취미 : <label for="hobby_coding">코딩</label
-              ><input
-                name="hobby"
-                type="checkbox"
-                value="coding"
-                id="hobby_coding"
-              />
-              <label for="hobby_movie">영화감상</label
-              ><input
-                name="hobby"
-                type="checkbox"
-                value="movie"
-                id="hobby_movie"
-              />
-              <label for="hobby_music">음악감상</label
-              ><input
-                name="hobby"
-                type="checkbox"
-                value="music"
-                id="hobby_music"
-              />
-              <label for="hobby_book">독서</label
-              ><input
-                name="hobby"
-                type="checkbox"
-                value="book"
-                id="hobby_book"
-              />
-              <label for="hobby_sport">운동</label
-              ><input
-                name="hobby"
-                type="checkbox"
-                value="sport"
-                id="hobby_sport"
-              />
-            </li>
-            <li>프로필 사진 : <input type="file" accept="image/*" /></li>
-            <li>
-              사는 지역 :
-              <select>
-                <option value="Seoul" selected>서울</option>
-                <option value="Geyung-gi">경기</option>
-                <option value="Incheon">인천</option>
-                <option value="Daejeon">대전</option>
-                <option value="Daegu">대구</option>
-                <option value="Busan">부산</option>
-              </select>
-            </li>
-            <li>
-              자기소개 :
-              <textarea
-                cols="50"
-                rows="5"
-                placeholder="가벼운 자기소개를 입력해주세요."
-              ></textarea>
-            </li>
-          </ul>
-          <div id="btn-box">
-            <button id="btn_submit" type="submit">가입하기</button>
-            <button id="btn_reset" type="reset">다시작성</button>
-          </div>
-        </fieldset>
-      </form>
+    <div class="big_container">
+      <h2>introduction</h2>
+      <h1>I'm HARAM.</h1>
+      <div class="profile-spans">
+        <span>Future</span> <span>Full-Stack</span> <span>Developer</span>
+      </div>
+
+      <h3>Who Am I?</h3>
+      <div class="grid">
+        <div class="item">
+          <img id="profile-img" src="Pinke_Pie.webp" width="200rem" />
+        </div>
+        <div class="item"></div>
+        <div class="item"><strong>이하람 / HARAM LEE</strong></div>
+        <div class="item">2002.08.09</div>
+        <div class="item">010-4610-7116</div>
+        <div class="item">haram8009@gmail.com</div>
+        <div class="item">
+          <p>
+            I am a university student currently studying
+            <strong>Computer-Science</strong> at <strong>Kookmin Univ.</strong>
+          </p>
+          <p>
+            I am always looking for new challenges and opportunities to learn
+            and grow🔥.
+          </p>
+          <p>
+            One of my goals is to being
+            <strong>a Full-stack Developer!!</strong> I am actively involved in
+            <a href="https://github.com/LIKELION-KMU-11TH"
+              ><strong>🦁Likelion-KMU-11th</strong></a
+            >
+            to gain practical experience and develop my skills.
+          </p>
+          <p>
+            <strong>In my free time</strong>, I enjoy reading books📚 , watching
+            movies and TV shows📺, and spending time with my friends and
+            family👫, which help me to relax and recharge after a busy day of
+            classes and studying.
+          </p>
+          <b>Thank you for taking the time to get to know me!</b>
+        </div>
+      </div>
+      <!-- <h3>skill</h3> -->
+      <img src="pinkiepie.gif" width="200px" />
+      <!--핑키 컬러팔레트 
+        #f9b8d2	
+        #f0438c	
+        #86d8f7	
+        #fefbb1 -->
+      <div class="quote">
+        <p>
+          Yesterday is History, Tomorrow is a Mystery,<br />Today is a Gift of
+          God That is why it is called the Present.
+        </p>
+      </div>
     </div>
   </body>
 </html>
