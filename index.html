@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Likelion Login</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="big-container">
+      <a href="http://www.codelion.net" target="_blank"
+        >멋쟁이사자처럼 바로가기</a
+      >
+      <img src="likelionuniv.png" />
+      <h1>회원가입</h1>
+      <form action="서버주소" method="POST">
+        <fieldset>
+          <legend>기본 정보</legend>
+          <ul>
+            <li>
+              <label for="userid">아이디 :</label>
+              <input
+                id="userid"
+                type="text"
+                placeholder="아이디는 8자 이상입니다. "
+              />
+            </li>
+            <li>
+              <label for="userpw"> 비밀번호 :</label>
+              <input
+                id="userpw"
+                type="text"
+                placeholder="비밀번호는 10자 이상입니다. "
+              />
+            </li>
+            <li>
+              성별 : <label for="gender_man">남자</label
+              ><input
+                name="gender"
+                id="gender_man"
+                type="radio"
+                value="man"
+                checked
+              />
+              <label for="gender_woman">여자</label
+              ><input
+                name="gender"
+                id="gender_woman"
+                type="radio"
+                value="woman"
+              />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>부가 정보</legend>
+          <ul>
+            <li>
+              취미 : <label for="hobby_coding">코딩</label
+              ><input
+                name="hobby"
+                type="checkbox"
+                value="coding"
+                id="hobby_coding"
+              />
+              <label for="hobby_movie">영화감상</label
+              ><input
+                name="hobby"
+                type="checkbox"
+                value="movie"
+                id="hobby_movie"
+              />
+              <label for="hobby_music">음악감상</label
+              ><input
+                name="hobby"
+                type="checkbox"
+                value="music"
+                id="hobby_music"
+              />
+              <label for="hobby_book">독서</label
+              ><input
+                name="hobby"
+                type="checkbox"
+                value="book"
+                id="hobby_book"
+              />
+              <label for="hobby_sport">운동</label
+              ><input
+                name="hobby"
+                type="checkbox"
+                value="sport"
+                id="hobby_sport"
+              />
+            </li>
+            <li>프로필 사진 : <input type="file" accept="image/*" /></li>
+            <li>
+              사는 지역 :
+              <select>
+                <option value="Seoul" selected>서울</option>
+                <option value="Geyung-gi">경기</option>
+                <option value="Incheon">인천</option>
+                <option value="Daejeon">대전</option>
+                <option value="Daegu">대구</option>
+                <option value="Busan">부산</option>
+              </select>
+            </li>
+            <li>
+              자기소개 :
+              <textarea
+                cols="50"
+                rows="5"
+                placeholder="가벼운 자기소개를 입력해주세요."
+              ></textarea>
+            </li>
+          </ul>
+          <div id="btn-box">
+            <button id="btn_submit" type="submit">가입하기</button>
+            <button id="btn_reset" type="reset">다시작성</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
