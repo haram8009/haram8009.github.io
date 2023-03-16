@@ -1,43 +1,108 @@
-a {
-  color: orange;
+/* <!--핑키 컬러팔레트
+  #f9b8d2
+  #f0438c
+  #86d8f7
+  #fefbb1 --> */
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lobster&family=Mukta&family=Sofia+Sans+Extra+Condensed:wght@200&display=swap");
+body {
+  padding: 4rem 0rem;
+  background-color: #5f5f5f;
+  /* #d9e3d8; */
+  /* #d7cacf; */
+  font-family: sans-serif;
+  color: #f9b8d2;
 }
-a:visited {
-  color: gray;
-}
-a:hover {
-  color: orange;
-}
-#big-container {
-  width: 40rem;
-  padding: 2rem;
-  border: 0.5rem solid orange;
-}
-h1 {
+.big_container {
+  border: 0.6rem solid #f9b8d2;
+  width: 30rem;
+  padding: 4rem;
+  margin: auto;
   text-align: center;
 }
-legend {
+.contents-box {
+  margin-bottom: 3rem;
+}
+h1 {
+  font-family: "Black Han Sans", sans-serif;
+  margin-bottom: 0;
+}
+h3,
+h2 {
+  font-family: "Lobster", cursive;
+  color: #86d8f7;
+}
+.profile-spans {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
   font-size: larger;
-  font-weight: bold;
+  color: #fefbb1;
 }
-ul {
-  padding: 0;
-  list-style: none;
+.quote {
+  font-size: larger;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  border-top: 0.1rem solid #fefbb1;
+  border-bottom: 0.1rem solid #fefbb1;
+  color: #fefbb1;
 }
-button {
-  width: 7em;
-  height: 3em;
-  margin: 1em 0.2em;
-  text-decoration: underline;
-  cursor: pointer;
-  font-weight: bold;
-  border: 0.1rem solid black;
-  /* padding: 0.6rem 1rem; */
-  color: white;
-}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-#btn_submit {
-  background-color: orange;
+  font-family: "Mukta", sans-serif;
+  width: 100%;
+  font-size: 1rem;
 }
-#btn_reset {
-  background-color: gray;
+.item {
+  /* border: 1px solid black; */
+  padding: 0.2rem;
+  text-align: left;
+}
+.item:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/7;
+}
+.item:nth-child(8) {
+  grid-column: 1/3;
+}
+.profile-img-container {
+  position: relative;
+}
+.profile-img {
+  background: url("pinkie-freakout.png");
+  background-size: cover;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 12rem;
+  height: 12rem;
+
+  border: 0.5rem outset #fefbb1;
+
+  background-color: transparent;
+  border-radius: 50%;
+
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.1 ease 0.5s;
+}
+/* 호버기능 모바일 막기*/
+/* @media (hover: hover) and (pointer: fine) { */
+.profile-img:hover {
+  background: url("pinkie-closeupface.jpg");
+  background-size: cover;
+  opacity: 1;
+}
+/* } */
+strong {
+  color: #f0438c;
+}
+b {
+  color: #fefbb1;
 }
