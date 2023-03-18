@@ -1,9 +1,13 @@
+/* @import url(./reset.css); */
+
 /* <!--핑키 컬러팔레트
   #f9b8d2
   #f0438c
   #86d8f7
   #fefbb1 --> */
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lobster&family=Mukta&family=Sofia+Sans+Extra+Condensed:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
 body {
   padding: 4rem 0rem;
   background-color: #5f5f5f;
@@ -11,13 +15,15 @@ body {
   /* #d7cacf; */
   font-family: sans-serif;
   color: #f9b8d2;
+  /* min-width: 40rem; */
 }
 .big_container {
   border: 0.6rem solid #f9b8d2;
-  width: 30rem;
+  max-width: 40rem;
   padding: 4rem;
   margin: auto;
   text-align: center;
+  box-sizing: border-box;
 }
 .contents-box {
   margin-bottom: 3rem;
@@ -43,7 +49,10 @@ h2 {
 }
 .quote {
   font-size: larger;
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  /* font-family: "Sofia Sans Extra Condensed", sans-serif; */
+  /* font-family: "Montez", cursive; */
+  font-family: "Schoolbell", cursive;
+
   border-top: 0.1rem solid #fefbb1;
   border-bottom: 0.1rem solid #fefbb1;
   color: #fefbb1;
@@ -58,28 +67,46 @@ h2 {
   width: 100%;
   font-size: 1rem;
 }
+
 .item {
-  /* border: 1px solid black; */
   padding: 0.2rem;
   text-align: left;
 }
 .item:nth-child(1) {
   grid-column: 1/2;
-  grid-row: 1/7;
+  grid-row: 1/8;
 }
-.item:nth-child(8) {
+.item:nth-child(9) {
   grid-column: 1/3;
 }
-.profile-img-container {
-  position: relative;
+@media (max-width: 768px) {
+  /* 브라우저 창 width가 768px 보다 작이지는 순간부터 적용 - 모바일 */
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .item:nth-child(1) {
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+  .item:nth-child(2),
+  .item:nth-child(3),
+  .item:nth-child(4),
+  .item:nth-child(5),
+  .item:nth-child(6),
+  .item:nth-child(7),
+  .item:nth-child(8) {
+    text-align: center;
+    height: fit-content;
+  }
+  .item:nth-child(9) {
+    grid-column: 1;
+  }
 }
 .profile-img {
   background: url("pinkie-freakout.png");
   background-size: cover;
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 0;
   width: 12rem;
   height: 12rem;
 
@@ -104,5 +131,40 @@ strong {
   color: #f0438c;
 }
 b {
-  color: #fefbb1;
+  color: #86d8f7;
+}
+
+ul,
+li {
+  list-style: none;
+}
+.flow_banner {
+  overflow: hidden;
+  display: flex;
+  max-width: 1180px;
+  margin: 30px auto;
+  background-color: transparent;
+}
+.flow_banner .list {
+  display: flex;
+}
+.flow_banner .list > li {
+  font-size: 18px;
+  color: #fff;
+  padding: 20px;
+}
+@keyframes flowRolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.flow_banner_item {
+  width: 7rem;
+  height: 7rem;
+}
+.jumping-pinkie {
+  width: 15rem;
 }
